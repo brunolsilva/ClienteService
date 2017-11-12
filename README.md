@@ -3,7 +3,7 @@
 Aplicação REST utilizando Java 8, Spring Boot como framework base para a construção da aplicação, Spring Data JPA para acesso aos dados armazenados no banco de dados, banco de dados H2 em memória, Spring Cloud Hystrix como implementação do pattern Circuit Breaker (quando o serviço de campanhas está DOWN, um fallback é chamado), Swagger para documentação da API e Maven como ferramenta de build e gerenciamento de dependências. Implementação do cadastro de sócio torcedor solicitado.
 
 ## Para rodar a aplicação
-Após clonar este repositório, ir até até o diretório criado e rodar o seguinte comando: mvn spring-boot:run
+Após clonar este repositório, ir até até o diretório criado e rodar o seguinte comando <code>mvn spring-boot:run</code>
 
 ## Endereço da aplicação
 A aplicação foi configurada pra executar no seguinte endereço: http://localhost:9090
