@@ -114,14 +114,8 @@ public class ClienteResourceTest {
 	
 	@Test
 	public void cadastraClienteComCampanhaTest() {
-		System.out.println("-------------------");
-
 		Cliente cliente = new Cliente("Maria Silva", "aaa@gmail.com", 1, LocalDate.now());
 		ResponseEntity<List<CampanhaView>> retorno = clienteResource.cadastra(cliente);
-		System.out.println(retorno.getBody());
-		System.out.println(retorno.getStatusCode());
-		System.out.println("-------------------");
-
 		assertThat(retorno).isNotNull();
 		assertThat(retorno.getStatusCode()).isEqualTo(HttpStatus.CREATED);
 		assertThat(retorno.getBody()).isNotNull();
